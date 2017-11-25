@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LinearLayoutStyle"
+    tools:context="com.example.shank.learnmaoriuiux.MainActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        style="@style/MainActivityCardStyle"
+        android:layout_weight="2"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:padding="8dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_waiata"/>
+            
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Practice Waiata"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Waiata or songs and chants are an important part of Māori culture. The words and expressions preserve the wisdom and knowledge of ancestors."
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        style="@style/LinearLayoutStyle"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            style="@style/MainActivityCardStyle"
+            android:id="@+id/numbersCardId"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgnumbermain"
+                    style="@style/MainActivityOptionImageStyle"
+                    android:src="@drawable/icon_numbers"/>
+
+                <TextView
+                    style="@style/MainActivityOptionHeaderTextStyle"
+                    android:text="Numbers"/>
+
+                <TextView
+                    style="@style/MainActivityOptionDetailsTextStyle"
+                    android:text="Practice how numbers 1-10 are pronounced in Māori"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            style="@style/MainActivityCardStyle"
+            android:id="@+id/familyCardId"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgfamilymain"
+                    style="@style/MainActivityOptionImageStyle"
+                    android:src="@drawable/icon_family"/>
+
+                <TextView
+                    style="@style/MainActivityOptionHeaderTextStyle"
+                    android:text="Family"/>
+
+                <TextView
+                    style="@style/MainActivityOptionDetailsTextStyle"
+                    android:text="Practice and learn immediate Whānau"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            style="@style/MainActivityCardStyle"
+            android:id="@+id/colorsCardId"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgcolormain"
+                    style="@style/MainActivityOptionImageStyle"
+                    android:src="@drawable/icon_colors"/>
+
+                <TextView
+                    style="@style/MainActivityOptionHeaderTextStyle"
+                    android:text="Colours"/>
+
+                <TextView
+
+                    style="@style/MainActivityOptionDetailsTextStyle"
+                    android:text="A collection of Māori colours and their pronunciations"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

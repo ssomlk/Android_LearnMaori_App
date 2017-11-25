@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayoutStyle"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        style="@style/MainActivityCardStyle"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            style="@style/LinearLayoutStyle"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgsoundid"
+                style="@style/ImageStyle"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_volume" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:id="@+id/englishid"
+                    android:layout_marginBottom="8dp"
+                    android:text="One"/>
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:id="@+id/maoriid"
+                    android:textStyle="bold"
+                    android:text="Tahi"/>
+
+            </LinearLayout>
+
+            <ImageView
+                style="@style/ImageStyle"
+                android:id="@+id/imgpicid"
+                android:src="@drawable/icon1"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
